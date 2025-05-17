@@ -1,0 +1,16 @@
+<script>
+    function bangCuuChuong(n) {
+        var i =1;
+        var z = "";
+        while (i<=10) {
+            z += n + " x " + i + " = " + (n * i) + "<br>";
+            i++;
+        }
+        return z;
+    }
+    function hienbang () {
+        var n = parseInt (prompt('nhập số nguyên:'));
+        document.write (bangCuuChuong(n));
+    }
+    hienbang()
+</script>

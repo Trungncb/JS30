@@ -1,0 +1,22 @@
+<script>
+    function tinhGiaiThua(n) {
+        if (n < 0){
+            return 'lỗi';
+        }
+        else if (n===1||n===0) {
+            return 1;
+        }
+        else {
+            var x =1;
+            var i =1;
+            while (i<=n) {
+                x*=i;
+                i++;
+            }
+            return x
+        }
+    }
+    var j = parseInt (prompt('nhập số nguyên:'));
+    z= tinhGiaiThua(j);
+    document.write (z);
+</script>

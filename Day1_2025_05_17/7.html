@@ -1,0 +1,11 @@
+<script>
+    function veTamGiac(n) {
+        var x = "";
+        for (var i=1; i<=n ; i++) {
+            x += "*".repeat (i) + "<br>";
+        }
+        return x;
+    }
+    var a = parseInt (prompt('nhập số nguyên:'))
+    document.write (veTamGiac(a));
+</script>

@@ -1,0 +1,17 @@
+<script>
+    function xepLoai(diem) {
+        if (diem>=9) {
+            return 'Xuất sắc'
+        } else if (9>diem >=8) {
+            return 'Giỏi'
+        } else if (8>diem>=6) {
+            return 'khá'
+        } else if (6>diem>=5) {
+            return 'trung bình'
+        } else {
+            return 'Yếu'
+        }
+    }
+    var a = parseInt (prompt('nhập số điểm:'));
+    document.write (xepLoai(a))
+</script>
