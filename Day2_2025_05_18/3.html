@@ -1,0 +1,15 @@
+<script>
+    function laNamNhuan(nam) {
+        if ((nam %4 ===0 && nam % 100 !==0)  || (nam % 400 === 0)){
+            return true;
+        } else {
+            return false;
+        }
+    }
+    var x = parseInt (prompt());
+    if (laNamNhuan(x)){
+        document.write ('là năm nhuận');
+    } else {
+        document.write ('không phải là năm nhuận')
+    }
+</script>

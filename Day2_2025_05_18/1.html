@@ -1,0 +1,17 @@
+<script>
+    function fibonacci(n) {
+        if (n===0) return 0;
+        if (n===1) return 1;
+
+        var a=0;
+        var b=1;
+        for (var i =2; i<=n; i++){
+            var z= a+b;
+            a=b;
+            b=z;
+        }
+        return b;
+    }
+    var x = parseInt (prompt ());
+    document.write (fibonacci(x));
+</script>
