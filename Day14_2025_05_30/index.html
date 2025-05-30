@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý Sinh viên</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Quản lý Sinh viên - DOM</h2>
+    <div class="form-container">
+      <label>Mã sinh viên:</label>
+      <input type="text" id="masv">
+
+      <label>Họ tên:</label>
+      <input type="text" id="hoten">
+
+      <label>Email:</label>
+      <input type="text" id="email">
+
+      <label>Số điện thoại:</label>
+      <input type="text" id="sdt">
+
+      <button id="btn-action" onclick="themSinhVien()">Thêm</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Mã SV</th>
+          <th>Họ tên</th>
+          <th>Email</th>
+          <th>SDT</th>
+          <th>Hành động</th>
+        </tr>
+      </thead>
+      <tbody id="danhsach"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
