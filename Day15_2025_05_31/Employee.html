@@ -1,0 +1,29 @@
+<script>
+    class Employee {
+  constructor(name, position, baseSalary, workingDays) {
+    this.name = name;
+    this.position = position;
+    this.baseSalary = baseSalary;
+    this.workingDays = workingDays;
+  }
+
+  calculateSalary() {
+    return this.baseSalary * this.workingDays;
+  }
+
+  show() {
+    console.log(`Tên: ${this.name}`);
+    console.log(`Chức vụ: ${this.position}`);
+    console.log(`Lương cơ bản: ${this.baseSalary}`);
+    console.log(`Số ngày làm: ${this.workingDays}`);
+    console.log(`Lương thực nhận: ${this.calculateSalary()}`);
+  }
+}
+
+const emp1 = new Employee("Nguyễn Văn A", "Nhân viên", 300000, 22);
+const emp2 = new Employee("Trần Thị B", "Trưởng phòng", 500000, 20);
+
+emp1.show();
+emp2.show();
+
+</script>

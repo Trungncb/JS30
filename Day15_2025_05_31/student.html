@@ -1,0 +1,25 @@
+<script>
+
+class Student {
+  constructor(id, name, email, age) {
+    this.id = id;
+    this.name = name;
+    this.email = email;
+    this.age = age;
+  }
+
+  displayInfo() {
+    console.log(`ID: ${this.id}`);
+    console.log(`Tên: ${this.name}`);
+    console.log(`Email: ${this.email}`);
+    console.log(`Tuổi: ${this.age}`);
+  }
+}
+
+const student1 = new Student(1, "Nguyễn Văn A", "vana@gmail.com", 20);
+const student2 = new Student(2, "Trần Thị B", "thib@gmail.com", 21);
+
+student1.displayInfo();
+student2.displayInfo();
+
+</script>
