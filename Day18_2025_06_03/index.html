@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý sản phẩm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-group">
+      <input type="number" id="searchId" placeholder="Tìm theo ID">
+      <button onclick="searchProduct()">Search</button>
+      <button onclick="showAllProducts()">Hiển thị tất cả</button>
+  </div>
+  <div class="container">
+    <h1>Quản lý sản phẩm</h1>
+    <div class="form-group">
+      <input type="number" id="productId" placeholder="ID">
+      <input type="text" id="productName" placeholder="Tên sản phẩm">
+      <input type="number" id="productPrice" placeholder="Giá">
+      <input type="number" id="productQuantity" placeholder="Số lượng">
+      <button onclick="handleAddOrUpdate()">Thêm</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th><th>Tên</th><th>Giá</th><th>Số lượng</th><th>Tổng giá trị</th><th>Hành động</th>
+        </tr>
+      </thead>
+      <tbody id="productTable"></tbody>
+    </table>
+
+    <p id="totalValue"></p>
+    <p id="mostExpensive"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
